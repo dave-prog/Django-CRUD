@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import generic
 
-from I4G004596FNA.blog.models import Post
+from blog.models import Post
 
 # Create your views here.
 class PostListView(generic.ListView):
