@@ -10,7 +10,7 @@ class PostListView(generic.ListView):
 
 class PostCreateView(generic.CreateView):
     model = Post
-    fields = "__all__"
+    fields = ["__all__"]
     success_url = reverse_lazy("blog:all")
 
 class PostDetailView(generic.DetailView):
@@ -18,10 +18,10 @@ class PostDetailView(generic.DetailView):
 
 class PostUpdateView(generic.UpdateView):
     model: Post
-    fields = "__all__"
+    fields = ["__all__"]
     success_url: reverse_lazy("blog:all")
 
 class PostDeleteView(generic.DeleteView):
     model: Post
-    fields = "__all__"
+    fields = ["__all__"]
     success_url: reverse_lazy("blog:all")
