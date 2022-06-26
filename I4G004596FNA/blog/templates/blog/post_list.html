@@ -34,7 +34,8 @@
                     <td class="text-center">{{post.author}}</td>
                     <td class="text-center">{{post.body|truncatewords:30|linebreaks}}</td>
                     <td class="text-center">{{post.status}}</td>
-                    <td class="text-center">{{post.published_at|date:"D, d M, y"}}</td>
+                    <td class="text-center">{{post.publish|date:"D, d M, y"}}</td>
+                    <td class="text-center">{{post.created|date:"D, d M, y"}}</td>
                     <td><a href="{% url 'blog:post_update' post.slug %} ">Update</a></td>
                     <td><a href="{% url 'blog:post_delete' post.slug %}">Delete</a></td>
                 </tr>
